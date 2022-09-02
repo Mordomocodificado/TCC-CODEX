@@ -13,6 +13,7 @@ go
 
 create table Usuario(
 	ID int identity primary key,
+	Email varchar (200) not null,
 	Nome varchar(200) not null,
 	Senha varchar(1000) not null,
 );
