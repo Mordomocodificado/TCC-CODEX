@@ -51,6 +51,10 @@ namespace TCC_CODEX.Model
 
                 entity.Property(e => e.Id).HasColumnName("ID");
 
+                entity.Property(e => e.Email)
+                    .HasMaxLength(200)
+                    .IsUnicode(false);
+
                 entity.Property(e => e.Nome)
                     .HasMaxLength(200)
                     .IsUnicode(false);
